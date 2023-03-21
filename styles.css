@@ -1,9 +1,11 @@
 canvas{
+    position: absolute;
     background-color: rgb(0, 163, 0);
     border: 1px solid black;
     height: 1000;
-    
+    left: 590px;
 }
+
 body{
     
     display: flex;
@@ -16,6 +18,7 @@ body{
     position: absolute;
     width: 100px;
     height: 930px;
+    left: 790px;
     z-index: 3;
 }
 .leftway{
@@ -66,5 +69,6 @@ body{
     position: absolute;
     top: 400px;
     opacity: 0;
+    left: 685px;
     z-index: 10;
 }

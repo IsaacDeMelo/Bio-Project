@@ -16,6 +16,7 @@ var fruit = document.getElementById("fruit")
 var fruitX = 0;
 var fruitY = 0;
 var pontos = 0;
+var fruitSpeed = 10;
 var POX = [
     75, 225, 375
 ]
@@ -40,7 +41,7 @@ function updateBlock(){
 }
 function update(){
     if (poits > 0){
-        cursor += 10;
+        cursor += fruitSpeed;
     }
     
     char.style.left = posX_Player + 515 + "px";
@@ -120,7 +121,9 @@ function loop(){
     window.requestAnimationFrame(loop, cnv);
     if (poits > 0){
         poits -= 0.3;
+        fruitSpeed += 0.009
     } 
+    
     posX_Player = POX[index];
     updateBlock();
     update();
