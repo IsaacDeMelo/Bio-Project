@@ -1,0 +1,70 @@
+canvas{
+    background-color: rgb(0, 163, 0);
+    border: 1px solid black;
+    height: 1000;
+    
+}
+body{
+    
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+.firstway{
+    background-color: rgb(201, 176, 66);
+    position: absolute;
+    width: 100px;
+    height: 930px;
+    z-index: 3;
+}
+.leftway{
+    background-color: rgb(201, 176, 66);
+    position: absolute;
+    width: 100px;
+    height: 930px;
+    left: 640px;
+    z-index: 3;
+}
+.rightway{
+    background-color: rgb(201, 176, 66);
+    position: absolute;
+    width: 100px;
+    height: 930px;
+    left: 940px;
+    z-index: 3;
+}
+#score{
+    position: absolute;
+    z-index: 10;
+    left: 980px;
+    color: white;
+   
+}
+#pica{
+    z-index: 5;
+    position: absolute;
+    transition: all 0.1s linear;
+}
+#fruit{
+    z-index: 4;
+    position: absolute;
+}
+.energy{
+    z-index: 10;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    margin-top: 10px;
+    left: 650px;
+    width: 100px;
+    background-color: gold;
+    width: 400px;
+}
+#was{
+    position: absolute;
+    top: 400px;
+    opacity: 0;
+    z-index: 10;
+}
